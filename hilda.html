@@ -1,0 +1,427 @@
+<html>
+
+<head>
+    <title>webpage</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet"
+        integrity="sha384-9ndCyUaIbzAi2FUVXJi0CjmCapSmO7SnpJef0486qhLnuZ2cdeRhO02iuK6FUUVM" crossorigin="anonymous">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"
+        integrity="sha384-geWF76RCwLtnZ8qwWowPQNguL3RmwHVBC9FhGdlKrxdiJJigb/j/68SIy3Te4Bkz"
+        crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+</head>
+<style>
+    @media only screen and (min-width:500px) {
+        body {
+            background-color: aqua;
+        }
+    }
+
+    .navb {
+        text-decoration: none;
+    }
+
+    .navb:hover {
+        text-decoration: underline;
+        color: white;
+    }
+
+
+    body {
+        background-image: url(https://www.pixel4k.com/wp-content/uploads/2020/08/blender_1596928093-1536x864.jpg.webp);
+        background-size: cover;
+    }
+
+    .grid-container1 {
+        display: grid;
+        width: 110%;
+        padding-left: 50px;
+        padding-top: 50px;
+        background-color: rgb(34, 4, 61);
+    }
+
+
+    .image {
+        text-align: center;
+        color: white;
+        padding-right: 800px;
+    }
+
+    .about1 {
+        color: white;
+        font-size: 40px;
+
+    }
+
+    .text {
+        color: grey;
+        padding-left: 700px;
+        font-family: Verdana, Geneva, Tahoma, sans-serif;
+        font-size: small;
+        margin-bottom: 0px;
+
+    }
+
+    .download {
+        color: black;
+        margin-left: 700px;
+    }
+
+    .grid-container {
+        display: grid;
+        grid-template-columns: 700px 200px 250px 400px;
+        padding: -100px;
+        margin-top: 200px;
+    }
+
+    .grid-container>span {
+        display: grid;
+        font-size: 20px;
+    }
+
+    .flex-container {
+        display: flex;
+        padding: 50px;
+        background-color: white;
+        border-color: black;
+    }
+
+    .flex-container>div {
+        display: flex;
+        margin: 50px;
+        padding: 50px;
+        border-color: red;
+    }
+
+    .icon {
+        height: 50px;
+        width: 60px;
+        cursor: pointer;
+
+        padding: 14px 17px;
+        background-color: aliceblue;
+        border-radius: 30px;
+    }
+
+    .icon:hover {
+        background-color: yellow;
+        box-shadow: 2px 3px lightslategray;
+    }
+
+    .count_flex {
+        margin-top: 90px;
+        height: 150px;
+        width: 100%;
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+
+    .count_flex>li {
+        margin-top: 15px;
+        height: 60px;
+        width: 200px;
+        text-align: center;
+        align-items: center;
+        padding: 25px 10px;
+    }
+
+    .count {
+        text-align: center;
+        align-items: center;
+        line-height: 1.5;
+        font-size: 22px;
+    }
+
+    .n {
+        font-size: 40px;
+        font-family: serif;
+        font-weight: 700;
+        color: black;
+    }
+
+    .nbg .n {
+        padding: -38px;
+        border-radius: 100%;
+        background-color: rgb(59, 12, 168);
+    }
+
+    .p_4 {
+        height: 900px;
+        width: 100%;
+        padding-top: 80px;
+    }
+
+    .service_flex {
+        margin-top: 70px;
+        height: 500px;
+        width: 1100px;
+        padding: 0px;
+    }
+
+    .service_flex>ul>li:hover {
+        width: 100%;
+        background-color: #4942E4;
+    }
+
+    .service_flex>ul>li {
+        display: flexbox;
+        flex-direction: column;
+        padding: 0px;
+        margin-top: 0px;
+        height: 130px;
+        width: 100%;
+        border-top: .5px solid whitesmoke;
+    }
+
+    .inner_flex {
+        display: flex;
+        height: 100%;
+        width: 100%;
+        cursor: pointer;
+    }
+
+    .inner_flex_left {
+        display: flex;
+        width: 340px;
+        height: 100%;
+        font-size: 45px;
+    }
+
+    .inner_flex_left>.number {
+        width: 60px;
+        margin-left: -30px;
+    }
+
+    .inner_flex_right {
+        width: 640px;
+        height: 100%;
+        font-size: 17px;
+        padding-top: 35px;
+        text-align: left;
+    }
+
+    .service_flex>ul>li,
+    .inner_flex,
+    .inner_flex_left,
+    .inner_flex_left>.number {
+        align-items: center;
+        justify-content: center;
+        text-align: left;
+        float: left;
+    }
+
+    .grid-containe2 {
+        display: grid;
+        grid-template-rows: auto auto;
+        background-color: yellow;
+        padding: 50px;
+    }
+
+    .grid-container>div {
+        display: grid;
+        font-size: small;
+    }
+</style>
+
+<body>
+    <div class="container">
+        <div class="nav" style="margin-top: 10px;">
+            <div class="col" style="color:white; font-size: 25px;"><i class="fa-brands fa-slack"></i>&nbsp;Ordio</div>
+            <div class="col navb" style="color:white; margin-top:10px;padding-left: 100px;">
+                Home</div>
+            <div class="col navb" style="color:white; margin-top:10px;">About</div>
+            <div class="col navb" style="color:white ;margin-top:10px;">Service</div>
+            <div class="col navb" style="color:white ;margin-top:10px;">Portfolio</div>
+            <div class="col navb" style="color:white ;margin-top:10px;">Blog</div>
+            <div class="col navb" style="color:white ;margin-top:10px;padding-right: 30px;">
+                Contact</div>
+            <div class="col" style="padding-left:50px;"><button
+                    style="height:35px; width:150px; border-radius: 10px;">Purchase Now</button></div>
+        </div>
+    </div>
+    <div class="container">
+        <div class="row" style="padding-left:700px; padding-top: 150px;">
+            <img src="https://devblogs.microsoft.com/visualstudio/wp-content/uploads/sites/4/2019/08/VSMac-Logo.png"
+                style="border-color: rebeccapurple; height: 300px; width: 400px;">
+        </div>
+    </div>
+    <div class="container">
+        <div class="row align-items-starts" style="margin-bottom:100px">
+            <div class="col"
+                style="color:white; padding-left: 100px; margin-bottom: 200px; font-size: 50px; margin-top: -350px;">
+                A.M.Santhosh&nbsp;<i class="fa-solid fa-hand" style="color:sandybrown;"></i></div>
+            <div class="row" style="margin-top:-250px; font-size: 30px; color: white; padding-left: 110px;">_______
+                developer</div>
+            <div class="row" style="margin-top: -190px; padding-left: 110px; color: rgb(192, 185, 185);">Im Creative
+                Software Developer
+                based in New york, and Im very<br><br>Passinote and
+                Dedicated
+                to
+                my Work</div>
+            <button
+                style="height: 40px;margin-bottom:-50px ;margin-top: -100px; width:150px; border-radius: 8px; background-color: rebeccapurple; color: white; border-color: rebeccapurple; margin-left: 100px;"><b>Say
+                    Hello&nbsp;<i class="fa-brands fa-telegram"></i></b></button>
+        </div>
+    </div>
+    <p class="col" style="margin-top:-190px; color:white; margin-left: 400px;"><b>My Works</b>
+    </p><br>
+    <p class="col-12" style="color: rgb(192, 185, 185);padding-left: 200px;">Follow me:&nbsp;<i
+            class="fa-brands fa-instagram" style="color:white;"></i>&nbsp;<i class="fa-brands fa-google"
+            style="color: white;"></i>&nbsp;<i class="fa-brands fa-facebook" style="color: white;"></i></p><br>
+    </div>
+    </div>
+    <div class="grid-container1">
+        <div class="image"><img
+                src="https://cdn.icon-icons.com/icons2/3053/PNG/512/microsoft_visual_studio_macos_bigsur_icon_189958.png">
+        </div>
+        <div class="about1"
+            style="padding-left: 650px; margin-top: -400px; font-family: Verdana, Geneva, Tahoma, sans-serif;">About me
+            _______</div><br>
+    </div>
+    <div>
+        <div class="text" style="margin-top:-300px;">With 10 years Experience as a Professional web
+            developer,<br><br>have Acquierd The Skill and
+            Knowledge
+            Necessary to Make<br><br>Your Project a Success a enjoy step fo the design<br><br>Process, from discusion
+            and
+            Collabration</div><br>
+    </div>
+    <div>
+        <br><button class="download"
+            style="height: 50px; width: 150px; border-color:white; border-radius: 10px;">Download
+            CV&nbsp;<i class="fa-solid fa-newspaper"></i></button>
+    </div>
+    <span class="grid-container">
+        <span
+            style="margin-left:100px;color: white; font-family: Verdana, Geneva, Tahoma, sans-serif;font-size: 40px;"><b>My
+                Experts<br>Ideas _______</b><br>
+            <h6 style="color: grey;"><br> You can Express Yourself however you want and<br> Whenerver you want, for
+                free. You can
+                customize a<br> template or make your own from scratch, with an<br> immersive library at your disposal.
+                You can express<br> yourself however you want and whenever you free.<br></h6>
+            <h6 style="color:grey ;"><br>You can customize a template
+                or make your own from<br> scracth, with an immersive libraray at your disposal
+            </h6>
+        </span>
+        <span style="color: white;font-size:30px;">Skills<br><i class="fa-brands fa-bootstrap">
+                <h6><br>bootstrap</h6>
+            </i><br></span>
+        <span style="color:white;font-size:30px;"> Experience<br><i class="fa-brands fa-css3-alt">
+                <h6><br>CSS</h6>
+            </i><br></span>
+        <span style="color: white;font-size:30px;">Education<br><i class="fa-brands fa-html5">
+                <h6><br></brZ>HTML</h6>
+            </i><br></span>
+        <span style="margin-top:20px; margin-left:100px;"><button
+                style="border-radius:5px; width:150px;height:50px;color:white;border-color:rgb(59, 12, 168);background-color:  rgb(59, 12, 168);">My
+                Resume<i class="fa-duotone fa-calendar-lines"></i></button></span>
+    </span><br>
+    <div class="row">
+        <ul class="count_flex">
+            <li class="nbg">
+                <div class="count">
+                    <span class="n">219<br></span><span>Training</span></span>
+                </div>
+            </li>
+            <li class="nbg">
+                <div class="count">
+                    <span class="n">48<br></span><span>Written Book</span>
+                </div>
+            </li>
+            <li class="nbg">
+                <div class="count">
+                    <span class="n">219<br></span><span>Training</span>
+                </div>
+            </li>
+            <li class="nbg">
+                <div class="count">
+                    <span class="n">12<br></span><span>Own Projects</span>
+                </div>
+            </li>
+        </ul>
+    </div>
+    <main class="p_4">
+        <div class="container">
+            <div class="heading">
+                <div style="font-family:Verdana, Geneva, Tahoma, sans-serif ; color: white; font-size: 50px;">
+                    <b>Services</b>
+                </div>
+                <div style="font-family:Verdana, Geneva, Tahoma, sans-serif ; color: white; font-size: 50px;"><b>I
+                        Provide______</b></div>
+            </div>
+            <div class="service_flex">
+                <ul>
+                    <li class="current">
+                        <div class="inner_flex">
+                            <div class="inner_flex_left">
+                                <span class="number" style="color:white ;font-size: 30px;">01</span>
+                                <h3 style="color:white;">UI/UX Design</h3>
+                            </div>
+                            <div class="inner_flex_right">
+                                <div>
+                                    <p style="color: white;font-family: Verdana, Geneva, Tahoma, sans-serif;">You can
+                                        customize a template or make your own from scratch, with an
+                                        immersive library at your disposal..</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="inner_flex">
+                            <div class="inner_flex_left">
+                                <span class="number" style="color: white;font-size: 30px;">02</span>
+                                <h3 style="color: white;">User Research</h3>
+                            </div>
+                            <div class="inner_flex_right">
+                                <div>
+                                    <p style="color: white;font-family: Verdana, Geneva, Tahoma, sans-serif;">You can
+                                        customize a template or make your own from scratch, with an
+                                        immersive library at your disposal..</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li>
+                        <div class="inner_flex">
+                            <div class="inner_flex_left">
+                                <span class="number" style="color: white;font-size: 30px;">03</span>
+                                <h3 style="color:white ;">UI Animation</h3>
+                            </div>
+                            <div class="inner_flex_right">
+                                <div>
+                                    <p style="color: white;font-family: Verdana, Geneva, Tahoma, sans-serif;">You can
+                                        customize a template or make your own from scratch, with an
+                                        immersive library at your disposal..</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+
+                    <li style="border-bottom: .5px solid whitesmoke;">
+                        <div class="inner_flex">
+                            <div class="inner_flex_left">
+                                <span class="number" style="color: white;font-size: 30px;margin-left: 0px;">04</span>
+                                <h3 style="color: white;">Product Design</h3>
+                            </div>
+                            <div class="inner_flex_right">
+                                <div>
+                                    <p style="color: white;font-family: Verdana, Geneva, Tahoma, sans-serif;">You can
+                                        customize a template or make your own from scratch, with an
+                                        immersive library at your disposal..</p>
+                                </div>
+                            </div>
+                        </div>
+                    </li>
+                </ul>
+                <span class="ccc"></span>
+            </div>
+    </main>
+    <div class="grid-container2" style="background-color: yellow;margin-bottom: 500px;">
+        <div>1</div>
+        <div>2</div>
+        <div>3</div>
+        <div>4</div>
+        <div>5</div>
+    </div>
